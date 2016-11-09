@@ -8,7 +8,7 @@ a{
 }
 .list{
     width: 100%;
-   background: #444444;
+   background: #000000;
     height:40px;
     z-index: 1;
 }
@@ -25,8 +25,6 @@ a{
     width: 40px;
     height:40px;
     float: left;
-    background:#fff;
-    /*margin-left: 80px;*/
 }
 .mines div{
     width: 33.33%;
@@ -37,39 +35,54 @@ a{
 .banner{
     width: 100%;
     height:540px;
+    position: relative;
+    overflow: hidden;
+}
+.lunbo a{
+    display: block;
+    width: 100%;
+    height: 540px;
+    position: absolute;
+    /*top:40px;*/
+    /*left: 0;*/
 }
 .ban_i7{
-    display: block;
-    width: 100%;
-    height: 540px;
-    overflow: hidden;
-    background: url(../img/i7.jpg) no-repeat center;
-    position: absolute;
-    top:40;
-    left: 0;
-}
+    background:#000 url(../img/i7.jpg) no-repeat center;
+    background-size:contain;
 
+}
 .ban_dn{
-    display: block;
-    overflow: hidden;
-    width: 100%;
-    height: 540px;
-    background: url(../img/dn.jpg) no-repeat center;
-    position: absolute;
-    top:40;
-    left: 0;
+    background: url(../img/m_s.jpg) no-repeat center bottom;
+    background-size:contain;
+    left: 100%;
 }
 .ban_qb{
-     display: block;
-    overflow: hidden;
-     width: 100%;
-     height: 540px;
-     background: url(../img/qb.jpg) no-repeat center;
-    position: absolute;
-    top:40;
-    left: 0;
+     background:#000 url(../img/e_s.jpg) no-repeat center;
+     background-size:contain;
+    left: 100%;
  }
 
+@media screen and (min-width: 735px) {
+    .ban_dn{
+        background: url(../img/m_m.jpg) no-repeat center bottom;
+        background-size:cover;
+    }
+    .ban_qb{
+        background:#000 url(../img/e_m.jpg) no-repeat center;
+        background-size:cover;
+    }
+}
+
+@media screen and (min-width: 1075px) {
+    .ban_dn{
+        background: url(../img/m_l.jpg) no-repeat center bottom;
+        background-size:cover;
+    }
+    .ban_qb{
+        background:#000 url(../img/e_l.jpg) no-repeat center;
+        background-size:cover;
+    }
+}
 .listbox{
     width:100%;
     /*height: 406px;*/
@@ -88,6 +101,7 @@ a{
     border-bottom: 1px solid #E3E3E3;
     color: #909090;
     line-height: 39px;
+    cursor: pointer;
 }
 .xiaop li div{
     width: 20px;
@@ -130,8 +144,10 @@ a{
     color: #909090;
 }
 .erji{
-    height:0;
-    overflow: hidden;
+    /*height:0;*/
+    /*overflow: hidden;*/
+    display: none;
+
 }
 .erji li{
     border:0;
@@ -185,4 +201,67 @@ a{
     margin-bottom: 10px;
     color: #909090;
     font-size: 12px;
+}
+.lubut{
+    width: 180px;
+    height: 20px;
+    position: absolute;
+    left:0;
+    right:0;
+    margin: auto;
+    bottom: 10px;
+    z-index: 999;
+}
+.lubut div{
+    float: left;
+    width:50px;
+    height:5px;
+    background: rgba(3,3,3,0.6);
+    margin-right: 10px;
+}
+.lubut .active{
+    width:0%;
+    height:5px;
+    background: #808080;
+}
+.left,.right{
+    width: 25%;
+    position: absolute;
+    top:0;
+    height:100%;
+    z-index:999;
+    /*transition:opacity .5s linear;*/
+}
+.left{
+    left:0;
+}
+.right{
+    right:0;
+}
+.leftbut,.rightbut{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background: #333;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin: auto;
+    opacity: 0;
+    transition:opacity 0.5s linear;
+}
+.leftbut{
+    left:20px;
+}
+.rightbut{
+    right:20px;
+}
+.left:hover .leftbut{
+    opacity: 1;
+}
+.right:hover .rightbut{
+    opacity: 1;
 }
