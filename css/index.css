@@ -1,0 +1,188 @@
+body,ul,li,p,span,h3{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.list{
+    width: 100%;
+   background: #444444;
+    height:40px;
+    z-index: 1;
+}
+
+.parent a{
+    color: #fff;
+    display: block;
+    height:40px;
+    /*margin-left: 80px;*/
+    float: left;
+    line-height: 40px;
+}
+.parent .imgbox{
+    width: 40px;
+    height:40px;
+    float: left;
+    background:#fff;
+    /*margin-left: 80px;*/
+}
+.mines div{
+    width: 33.33%;
+    float: left;
+    color: #fff;
+    text-align: center;
+}
+.banner{
+    width: 100%;
+    height:540px;
+}
+.ban_i7{
+    display: block;
+    width: 100%;
+    height: 540px;
+    overflow: hidden;
+    background: url(../img/i7.jpg) no-repeat center;
+    position: absolute;
+    top:40;
+    left: 0;
+}
+
+.ban_dn{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 540px;
+    background: url(../img/dn.jpg) no-repeat center;
+    position: absolute;
+    top:40;
+    left: 0;
+}
+.ban_qb{
+     display: block;
+    overflow: hidden;
+     width: 100%;
+     height: 540px;
+     background: url(../img/qb.jpg) no-repeat center;
+    position: absolute;
+    top:40;
+    left: 0;
+ }
+
+.listbox{
+    width:100%;
+    /*height: 406px;*/
+}
+.listbox .tup{
+    height:200px;
+    float: left;
+    border: 1px solid #fff;
+}
+.categroy{
+    width: 100%;
+    background:#F2F2F2;
+}
+.xiaop li{
+    padding-left: 20px;
+    border-bottom: 1px solid #E3E3E3;
+    color: #909090;
+    line-height: 39px;
+}
+.xiaop li div{
+    width: 20px;
+    height: 39px;
+    float: right;
+}
+.dap{
+    /*width: 980px;*/
+    margin: auto;
+    /*text-align: center;*/
+}
+.dap ul{
+    float: left;
+}
+.dap li{
+    height: 20px;
+    padding-left: 10px;
+    color: #333333;
+}
+.dap h3{
+    color: #333;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-size: 14px;
+}
+.dap a{
+    color: #666;
+    font-size: 12px;
+}
+.categroy span{
+    display: block;
+    color: #B4B4B4;
+    font-size: 12px;
+    line-height:49px;
+    height: 49px;
+    border-bottom: 1px solid #E3E3E3;
+}
+.erji a{
+    color: #909090;
+}
+.erji{
+    height:0;
+    overflow: hidden;
+}
+.erji li{
+    border:0;
+}
+.foot{
+    margin: 20px 0;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    border-bottom:1px solid #E3E3E3;
+
+}
+.foots{
+    color: #999;
+}
+.foots a{
+    color: #0070C9;
+}
+.baoliu,.map{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.map a{
+    padding:0 10px;
+    border-right: 1px solid #999;
+    color: #909090;
+    font-size: 12px;
+}
+.chain{
+    float: right;
+    width: 60px;
+    height: 100%;
+    font-size: 12px;
+}
+.chain .imgs{
+    width: 16px;
+    height: 16px;
+}
+.chain div{
+    float: left;
+}
+.beian{
+    margin-bottom: 20px;
+    color: #909090;
+    font-size: 12px;
+    width: 285px;
+}
+.beian a{
+    margin-bottom: 10px;
+    color: #909090;
+    font-size: 12px;
+}
