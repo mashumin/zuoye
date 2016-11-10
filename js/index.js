@@ -4,6 +4,9 @@ $(function(){
         // alert(index)
         $(".erji").eq(index).slideToggle(200);
     })
+    $(".yiji").click(function(){
+        $(".ej").slideToggle(200);
+    })
     var num=0;
     var nam=0;
     var time=0;
