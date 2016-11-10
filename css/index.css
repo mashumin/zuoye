@@ -6,6 +6,10 @@ body,ul,li,p,span,h3{
 a{
     text-decoration: none;
 }
+a:hover{
+    color: #333333;
+    text-decoration: underline;
+}
 .list{
     width: 100%;
    background: #000000;
